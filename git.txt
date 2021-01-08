@@ -1,0 +1,8 @@
+git config --global http.proxy http://proxy:3128
+git config --global user.name "user name"
+git config --global user.email "id@email.fr"
+
+git config --global alias.lola 'log --graph --decorate --pretty=oneline --abbrev-commit --all'
+git config --global alias.undo '!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f'
+git config --global pull.rebase true
+git config --global rerere.enabled true
